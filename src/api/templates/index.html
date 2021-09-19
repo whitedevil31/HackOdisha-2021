@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<head>   <title>SCRAPPY</title>
+  <body>
+ <h1>MY WEBSITE<h1>
+ <form method='post' >
+        {% csrf_token %}
+        {{ form.as_p }}
+ <input type='text' name='url' />
+<button type='submit' >SUBMIT</button>
+
+ </form>
+  </body>
+</head>
