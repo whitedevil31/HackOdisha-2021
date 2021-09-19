@@ -126,8 +126,6 @@ def search(url):
             v.truncate(0)   
         return 1
 
-#search("https://hackbout2.devfolio.co/submissions")
+#https://hackbout2.devfolio.co/submissions
 
 
-#path = os.getcwd()
-#print(path)
