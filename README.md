@@ -1,14 +1,14 @@
 # HACKODISHA
 
-##Members
+## Members
 
-##Tagline
+## Tagline
 
-##Detailed explanation of the problem
+## Detailed explanation of the problem
 
-##Detailed explanation of the solution
+## Detailed explanation of the solution
 
-##Tech Stacks used
+## Tech Stacks used
 
-##Step by step procedure to run
+## Step by step procedure to run
 
