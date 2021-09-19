@@ -26,7 +26,7 @@ def search(url):
             #print("TEAM",count)
             count = count + 1
             #print('\n')
-
+            temp_name = i['teamName']
             temp_title = i['projectTitle']
             temp_desc = i['projectDescription']
             temp_tech = i['techStack']
@@ -61,16 +61,17 @@ def search(url):
                 if title_score >= 90:
                     #print("IT IS WORKING")
                     dictionary1 = {
+                        "Team name":temp_name,
                         "Project Title":temp[0],
                         "Project Description":temp2[0],
                         "TechStack":temp3[0],
                         "Member":j['member'],
-                        "Member's project title":temp[1],
-                        "Member's project description":temp2[1],
-                        "Member's project Techstack":temp3[1],
-                        "Title Match Percentage(out of 100)":title_score,
-                        "Description Match Percentage(out of 100)":desc_score,
-                        "TechStack Match Percentage(out of 100)":tech_score 
+                        "Duplicate project title":temp[1],
+                        "Duplicate project description":temp2[1],
+                        "Duplicate project Techstack":temp3[1],
+                        "Title Match(out of 100)":title_score,
+                        "Description Match(out of 100)":desc_score,
+                        "TechStack Match(out of 100)":tech_score 
                     }
 
                     '''json_object = json.dumps(dictionary1, indent = 10)
@@ -85,16 +86,17 @@ def search(url):
                 elif desc_score >= 85:
                     #print("IT IS WORKING")
                     dictionary1 = {
+                        "Team name":temp_name,
                         "Project Title":temp[0],
                         "Project Description":temp2[0],
                         "TechStack":temp3[0],
                         "Member":j['member'],
-                        "Member's project title":temp[1],
-                        "Member's project description":temp2[1],
-                        "Member's project Techstack":temp3[1],
-                        "Title Match Percentage(out of 100)":title_score,
-                        "Description Match Percentage(out of 100)":desc_score,
-                        "TechStack Match Percentage(out of 100)":tech_score 
+                        "Duplicate project title":temp[1],
+                        "Duplicate project description":temp2[1],
+                        "Duplicate project Techstack":temp3[1],
+                        "Title Match(out of 100)":title_score,
+                        "Description Match(out of 100)":desc_score,
+                        "TechStack Match(out of 100)":tech_score 
                     }
 
                     #write_json10(dictionary1)

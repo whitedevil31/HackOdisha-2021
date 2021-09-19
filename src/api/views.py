@@ -41,7 +41,7 @@ def baseView(request):
         #email.send()
         # value=search(url)
         if value==1:
-            email= EmailMessage('django test mail','django body','magz3116@gmail.com',[email])
+            email= EmailMessage('Devfolio Police Force','Here are the details of all the hackers who submitted their previous hackathon projects.','magz3116@gmail.com',[email])
             email.attach_file('final_list1.csv')
             email.send()
             with open("final_list1.csv","r+") as v:
