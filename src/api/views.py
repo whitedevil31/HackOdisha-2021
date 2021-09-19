@@ -6,6 +6,8 @@ from django.shortcuts import render,redirect
 from .forms import NameForm
 from django.urls import reverse
 from django.core.mail import EmailMessage
+from django.views.decorators.csrf import csrf_exempt
+
 
 # sys.path.append('../')
 # from django.core.mail import EmailMessage
@@ -26,7 +28,7 @@ def formView(request):
 #         if value==1:
 #             return redirect('/success')
 #     return render(request,'index.html')
-
+@csrf_exempt
 def baseView(request):
     form = NameForm(request.POST)
     if request.method=="POST" and form.is_valid():
